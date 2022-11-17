@@ -16,7 +16,6 @@ begin_fill()
 
 penup()
 
-
 goto(-50, 60)
 pendown()
 
