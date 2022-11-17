@@ -33,7 +33,6 @@ for x, y in coordinates:
 
 end_fill()
 
-
 penup()
 
 # Set the turtle's pen color to black
@@ -44,7 +43,6 @@ width(10)
 
 
 # Split shape into 4
-
 goto(-50, 0)
 pendown()
 
