@@ -22,11 +22,11 @@ pendown()
 
 # Draw square
 coordinates = [
-				[100, 100],
-				[100, -100],
-				[-50, -60],
-				[-50, 60]
-			]
+		[100, 100],
+		[100, -100],
+		[-50, -60],
+		[-50, 60]
+	]
 
 for x, y in coordinates:
 	goto(x, y)
