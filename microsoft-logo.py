@@ -1,9 +1,8 @@
 # Windows Start Logo In Python
 
-# import turtle module
 from turtle import *
 
-# set the turtle's speed
+# set the turtle's speed and width
 speed(1)
 width(4)
 
@@ -17,19 +16,23 @@ begin_fill()
 
 penup()
 
-# Move the turtle to the starting point
+
 goto(-50, 60)
 pendown()
-# Move to right top
-goto(100, 100)
-# Move to right bottom
-goto(100, -100)
-# Move to left bottom
-goto(-50, -60)
-# Move back to starting point
-goto(-50, 60)
+
+# Draw square
+coordinates = [
+				[100, 100],
+				[100, -100],
+				[-50, -60],
+				[-50, 60]
+			]
+
+for x, y in coordinates:
+	goto(x, y)
 
 end_fill()
+
 
 penup()
 
@@ -40,22 +43,18 @@ color('black')
 width(10)
 
 
-# Cut shape into two halves
+# Split shape into 4
 
-# Start at left middle
 goto(-50, 0)
 pendown()
 
-# Go to  middle right
 goto(100, 0)
 
 penup()
 
-# Cut shape into two halves verticaally
-# Start from top
 goto(25, -80)
 pendown()
-# Go to bottom
+
 goto(25, 80)
 hideturtle()
 
