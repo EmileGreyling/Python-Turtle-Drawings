@@ -6,42 +6,41 @@
 
 # The turtle module provides a drawing board like feature, which enables us to create pictures and shapes.
 
-import turtle as t
-from time import sleep
+from turtle import *
 
-t.penup()
-t.goto(-140, -100)
-t.pendown()
+# Set the background color
+bgcolor('black')
 
-t.fillcolor('red')
-t.begin_fill()
+penup()
+goto(-140, -100)
+pendown()
+
+# Set the color of the turtle
+color('red')
+begin_fill()
 
 # Loop to draw red box
 for i in range(2):
-    t.forward(300)
-    t.circle(10, 90)
-    t.forward(200)
-    t.circle(10, 90)
+    forward(300)
+    circle(10, 90)
+    forward(200)
+    circle(10, 90)
 
-t.end_fill()
+end_fill()
 
-t.penup()
-t.goto(-15, -30)
-t.pendown()
+penup()
+goto(-15, -30)
+pendown()
+
+# Set the color of the turtle
+color('white')
 
 # Loop to draw play button
-t.fillcolor('white')
-t.begin_fill()
+begin_fill()
 for i in [30, 120, 120]:
-    t.left(i)
-    t.forward(100)
-t.end_fill()
-t.hideturtle()
+    left(i)
+    forward(100)
+end_fill()
+hideturtle()
 
-# Write text below YouTube Logo
-t.penup()
-t.goto(-140, -150)
-t.pendown()
-
-t.write("Thanks For Watching!", move=True, font=("Verdana", 21, "normal"))
-sleep(5)
+done()
