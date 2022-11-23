@@ -1,18 +1,17 @@
-# How To Impress your crush with Python
-
+# HOW TO IMPRESS YOUR CRUSH
 
 from turtle import *
 
 # Set background color to black
 bgcolor("black")
 
-# Set turtle color to read
+# Set turtle color to red
 color("red")
 
 begin_fill()
-pensize(3)
+pensize(4)
 
-# Start Drawing
+# Draw Heart
 left(50)
 forward(133)
 circle(50, 200)
@@ -21,7 +20,6 @@ circle(50, 200)
 forward(133)
 end_fill()
 
-# Hide the turtle
 hideturtle()
 
 done()
