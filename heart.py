@@ -8,6 +8,8 @@ bgcolor("black")
 # Set turtle color to red
 color("red")
 
+
+speed(1)
 begin_fill()
 pensize(4)
 
